@@ -1,0 +1,66 @@
+/* Print Specific Styles */
+@media print {
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        color: #000;
+        background-color: #fff;
+        margin: 1in; /* Typical print margins */
+    }
+
+    header, footer, #theme-toggle, nav, .hero, #intro, #interactive-map, .contact-form-section, #location-map, .survey-form, .projects-layout .details-btn, .projects-layout .project-details, .project-card img, .about-image, form button[type="submit"] {
+        display: none !important; /* Hide non-essential elements */
+    }
+
+    .container, .content-section {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        overflow: visible;
+    }
+
+    h1, h2, h3, h4 {
+        color: #000 !important;
+        page-break-after: avoid;
+    }
+
+    a {
+        color: #000 !important;
+        text-decoration: none; /* Or underline for clarity */
+    }
+    
+    a[href^="http"]:after, a[href^="https"]:after {
+        content: " (" attr(href) ")"; /* Show URLs for external links */
+        font-size: 0.9em;
+    }
+    
+    a[href^="#"]:after {
+        content: ""; /* Don't show for internal links */
+    }
+
+    .about-layout {
+        grid-template-columns: 1fr !important; /* Force single column */
+    }
+
+    .resume-section table {
+        width: 100%;
+        border: 1px solid #000;
+        font-size: 12pt;
+    }
+    .resume-section table th, .resume-section table td {
+        border: 1px solid #000;
+        padding: 5px;
+    }
+    .resume-section table th {
+        background-color: #eee !important;
+    }
+    .print-only {
+        display: block !important; /* Show elements specifically for print */
+        margin-top: 1em;
+        font-style: italic;
+    }
+
+    /* Ensure content doesn't get cut off */
+    p, ul, ol, table, figure {
+        page-break-inside: avoid;
+    }
+}

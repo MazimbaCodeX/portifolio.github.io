@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact John Doe for web development projects or inquiries.">
+    <meta name="keywords" content="contact John Doe, web developer contact, get in touch">
+    <meta name="author" content="John Doe">
+    <title>Contact Me - Mazimba Dev</title>
+    <link rel="stylesheet" href="/home/mazimba/Desktop/CP_Assignment/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="logo">
+                <h1><a href="/home/mazimba/Desktop/CP_Assignment/index.html">Mazimba Dev</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/home/mazimba/Desktop/CP_Assignment/index.html">Home</a></li>
+                    <li><a href="/home/mazimba/Desktop/CP_Assignment/about.html">About Me</a></li>
+                    <li><a href="/home/mazimba/Desktop/CP_Assignment/projects.html">Projects</a></li>
+                    <li class="current"><a href="/home/mazimba/Desktop/CP_Assignment/contact.html">Contact</a></li>
+                    <li><a href="/home/mazimba/Desktop/CP_Assignment/survey.html">Survey</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle">Toggle Theme</button>
+        </div>
+    </header>
+
+    <main class="container content-section">
+        <h2>Get In Touch</h2>
+        <p>Have a project in mind or just want to say hi? Fill out the form below or email me at <a href="mailto:mazimbadev@proton.me">mazimbadev@proton.me</a>.</p>
+
+        <section class="contact-form-section">
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <small class="error-message" id="nameError"></small>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                    <small class="error-message" id="emailError"></small>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number (Optional, e.g.. +255 755 762 392):</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    <small class="error-message" id="phoneError"></small>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                    <small class="error-message" id="subjectError"></small>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <small class="error-message" id="messageError"></small>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+                <p id="formStatus"></p>
+            </form>
+        </section>
+
+        <section id="location-map" class="content-section">
+            <h3>My General Location </h3>
+            <div class="iframe-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521200523868!2d-75.59673902497098!3d6.200000972400181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429986f93b88d%3A0x1a3e4d0de670f019!2sMedell%C3%ADn%2C%20Antioquia%2C%20Colombia!5e0!3m2!1sen!2sus!4v1678886400000!5m2!1sen!2sus" 
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Google Map of Medellin">
+                </iframe>
+            </div>
+             <!-- Inline CSS example (Justified: For a single, non-reusable element where a class might be overkill or for dynamic styling) -->
+            <p style="text-align:center; font-style:italic; margin-top:10px;">Note: This is a general location, not my exact address.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> John Doe. All Rights Reserved. &lt;Made with Passion&gt;</p>
+        </div>
+    </footer>
+    <script src="/home/mazimba/Desktop/CP_Assignment/script.js"></script>
+</body>
+</html>

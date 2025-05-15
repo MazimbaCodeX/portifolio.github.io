@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A showcase of web development projects by John Doe.">
+    <meta name="keywords" content="John Doe projects, web development portfolio, coding projects">
+    <meta name="author" content="John Doe">
+    <title>Projects - Mazimba Dev</title>
+    <link rel="stylesheet" href="/home/mazimba/Desktop/CP_Assignment/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="logo">
+                <h1><a href="/home/mazimba/Desktop/CP_Assignment/index.html">Mazimba Dev</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/home/mazimba/Desktop/CP_Assignment/index.html">Home</a></li>
+                    <li><a href="/home/mazimba/Desktop/CP_Assignment/about.html">About Me</a></li>
+                    <li class="current"><a href="/home/mazimba/Desktop/CP_Assignment/projects.html">Projects</a></li>
+                    <li><a href="/home/mazimba/Desktop/CP_Assignment/contact.html">Contact</a></li>
+                    <li><a href="/home/mazimba/Desktop/CP_Assignment/survey.html">Survey</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle">Toggle Theme</button>
+        </div>
+    </header>
+
+    <main class="container content-section">
+        <h2>My Projects</h2>
+        <p>Here are some of the projects I've worked on. Click to learn more!</p>
+
+        <section class="projects-layout">
+            <article class="project-card">
+                <img src="/home/mazimba/Desktop/CP_Assignment/images/project1.jpg" alt="Project One Thumbnail">
+                <h3>Project One: Awesome App</h3>
+                <p>A brief description of Project One. It solves a real-world problem using modern web tech.</p>
+                <button class="details-btn" data-project="project1">View Details</button>
+                <div id="project1-details" class="project-details" style="display:none;">
+                    <h4>More about Awesome App:</h4>
+                    <p>This app was built using HTML, CSS, and vanilla JavaScript. It features a dynamic UI and integrates with a third-party API to fetch and display data. Key challenges included managing asynchronous operations and ensuring cross-browser compatibility.</p>
+                    <p><strong>Technologies used:</strong> HTML5, CSS3 (Flexbox), JavaScript (ES6+), REST API.</p>
+                    <a href="#" target="_blank" class="project-link">Live Demo</a> | <a href="#" target="_blank" class="project-link">GitHub Repo</a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <img src="/home/mazimba/Desktop/CP_Assignment/images/project2.jpg" alt="Project Two Thumbnail">
+                <h3>Project Two: E-commerce Mockup</h3>
+                <p>A responsive e-commerce site mockup focusing on UI/UX and product display.</p>
+                <button class="details-btn" data-project="project2">View Details</button>
+                <div id="project2-details" class="project-details" style="display:none;">
+                    <h4>More about E-commerce Mockup:</h4>
+                    <p>This project focused on creating a visually appealing and intuitive user interface for an online store. Emphasis was placed on responsive design using CSS Grid and Flexbox, ensuring a seamless experience across devices.</p>
+                    <p><strong>Technologies used:</strong> HTML5, CSS3 (Grid, Flexbox), JavaScript (for interactions).</p>
+                    <a href="#" target="_blank" class="project-link">Live Demo</a> | <a href="#" target="_blank" class="project-link">GitHub Repo</a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <img src="/home/mazimba/Desktop/CP_Assignment/images/project3.jpg" alt="Project Three Thumbnail">
+                <h3>Project Three: Personal Blog</h3>
+                <p>A simple personal blog platform built with a focus on content and readability.</p>
+                <button class="details-btn" data-project="project3">View Details</button>
+                <div id="project3-details" class="project-details" style="display:none;">
+                    <h4>More about Personal Blog:</h4>
+                    <p>The goal was to create a clean, minimalist blog. Implemented features like dark mode and dynamic content loading for posts. This project also involved semantic HTML for better SEO and accessibility.</p>
+                    <p><strong>Technologies used:</strong> HTML5, CSS3, JavaScript.</p>
+                    <a href="#" target="_blank" class="project-link">Live Demo</a> | <a href="#" target="_blank" class="project-link">GitHub Repo</a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> John Doe. All Rights Reserved. &lt;Made with Passion&gt;</p>
+        </div>
+    </footer>
+    <script src="/home/mazimba/Desktop/CP_Assignment/script.js"></script>
+</body>
+</html>
